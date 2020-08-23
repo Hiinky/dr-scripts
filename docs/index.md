@@ -35,3 +35,9 @@ Your Pages site will use the layout and styles from the Jekyll theme you have se
 ### Support or Contact
 
 Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+
+### universal
+yaml_field | explanation
+------------ | -------------
+hometown | Some possible options: Crossing, Leth Deriel, Riverhaven, Therenborough, Rossman's Landing, Langenfirth, Throne City, Shard, Hibarnhvidar, Boar Clan, Ain Ghazal, Fang Cove, Ratha, Aesry, Mer'Kresh, Muspar'i, Hara'jaal
+safe_room: | A room number of your choosing. Best suggestion is a quiet room outside justice and _never_ a public room where people try to socialize.  It is extremely annoying to watch and bad manners to spam.
