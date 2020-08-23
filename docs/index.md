@@ -21,7 +21,7 @@ yaml_field | explanation
 cambrinth | The exact adjective and noun of your cambrinth item.
 cambrinth_cap | Numerical value your cambrinth holds such as 16.  It is important to get this number exact so the system can use while worn when applicable.  Formula to use cambrinth while worn is `(capacity * 2) + 100` so an incorrect cap can cause trouble.
 stored_cambrinth | Defaults to false.  Should your cambrinth be worn or stored?
-cambrinth_items:
+```cambrinth_items:
 - name:
   cap:
-  stored: |
+  stored:``` |
