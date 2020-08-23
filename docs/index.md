@@ -21,7 +21,25 @@ yaml_field | explanation
 cambrinth | The exact adjective and noun of your cambrinth item.
 cambrinth_cap | Numerical value your cambrinth holds such as 16.  It is important to get this number exact so the system can use while worn when applicable.  Formula to use cambrinth while worn is `(capacity * 2) + 100` so an incorrect cap can cause trouble.
 stored_cambrinth | Defaults to false.  Should your cambrinth be worn or stored?
-```cambrinth_items:
-- name:
-  cap:
-  stored:``` |
+check_discern_timer_in_hours | How often to discern mana/cambrinth values.  Default value 24 checks once every 24 hours. For use with auto mana only. 
+prep_scaling_factor | What percent of the max discern to cast.  Default value of 0.85 would use a combination of prepare and harness/cambrinth charges to cast a total of 85 mana on a spell that discerns at 100 mana.  Formula:  Max Discern x prep_scaling_factor = safe casting without backfire.  For use with auto mana only.
+symbiosis_learning_threshold | Default is 2.  When using auto mana and symbiosis, it will keep increasing mana until each cast shows a 2 mindstate gain.
+cambrinth_num_charges | Number of times to charge cambrinth or harness mana with auto mana only.  Default is 4.
+use_harness_when_arcana_locked | Defaults to false.  When set to true, combat-trainer will alternate harness/attunement and cambrinth/arcana in order to keep mindstates even.  Despite the name, it alternates always and not just when arcana locked.
+waggle_force_cambrinth | Defaults to true.  When set to false allows the buff script waggles (used in many places) to utilitize `use_harness_when_arcana_locked: true` listed above.
+combat_trainer_buffs_force_cambrinth | Defaults to true.  When set to false allows combat-trainer's `buff_spells` to utilitize `use_harness_when_arcana_locked: true` listed above.
+crossing_training_force_cambrinth | Defaults to false.  When set to true blocks crossing-training's `training_spells` from using `use_harness_when_arcana_locked: true` listed above.
+dedicated_camb_use | Optional field for use with dedicated cambrinth feat.  Ex: spell
+cambrinth_invoke_exact_amount | Defaults to false.  True invokes the exact amount you need from cambrinth.  Helps avoid backfire caused by previously charged mana.  Takes still to master.  Very helpful for traders with Avtalia Array.
+
+#### Multiple Cambrinth
+Multiple cambrinth pieces can be used almost everywhere magic can be used.  Does not work well with auto mana and adds extra roundtime as more pieces require more invoking.  Preference would be to use a single large worn cambrinth but in cases where that is not possible, this will work.
+```yaml
+cambrinth_items:
+- name: cambrinth.ring
+  cap: 4
+  stored:
+- name: cambrinth.armband
+  cap: 32
+  stored: true
+```
