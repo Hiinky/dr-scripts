@@ -1,51 +1,17 @@
-## Welcome to GitHub Pages
-
-You can use the [editor on GitHub](https://github.com/rpherbig/dr-scripts/edit/master/docs/index.md) to maintain and preview the content for your website in Markdown files.
-
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](gitub.com) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/rpherbig/dr-scripts/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+## dr-lich variable lists
 
 ### universal
+These two fields are used extensively in multiple scripts. They essentially define where your character lives.
 yaml_field | explanation
 ------------ | -------------
 hometown | Some possible options: Crossing, Leth Deriel, Riverhaven, Therenborough, Rossman's Landing, Langenfirth, Throne City, Shard, Hibarnhvidar, Boar Clan, Ain Ghazal, Fang Cove, Ratha, Aesry, Mer'Kresh, Muspar'i, Hara'jaal
-safe_room: | A room number of your choosing. Best suggestion is a quiet room outside justice and _never_ a public room where people try to socialize.  It is extremely annoying to watch and bad manners to spam.
+safe_room | A room number of your choosing. Best practice is a quiet room outside justice and _never_ a public room where people try to socialize.  It is extremely annoying to watch and bad manners to spam.
 
 ### go2 and bescort
+Various options for use during travel.
 yaml_field | explanation
 ------------ | -------------
 footwear | If defined, go2 will remove shoes before wearing ice skates when traveling the Forfedhar ice road.  Skates are available at the pond in Crossing during Winter or from players during the other seasons.  Highly recommended for saving time and your character's life.
 bescort_fare_handling | Defaults to false.  If true, will attempt to pull money from the nearest bank if you have no money for fares.  Can snag if you still have no funds at that bank but very useful if you remember to deposit a few plat in the usual places like Lang, Haven, or Leth.
-bescort_hide | Defaults to true.  If false, do not hide when on the ferries and suchlike.
+bescort_hide | Defaults to true.  If false, your character will not hide when on the ferries and suchlike.
 shard_thief_password | Optional field only useful to thieves in Shard who know their password.
