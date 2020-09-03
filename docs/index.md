@@ -43,3 +43,22 @@ cambrinth_items:
   cap: 32
   stored: true
 ```
+
+### almanac
+Supports random or pick-a-skill varieties.  Best use to to keep ;almanac running at all times combined with the ;combat-trainer training_abilities.  It is **very** important to let ;combat handle use during hunting to correctly juggle held items and avoid dropping anything.  That said, almanacs are very expensive and should be registered.  A highlight and sound effect on the "You dropped your prize" string would also serve good purpose.
+yaml_field | explanation
+------------ | -------------
+almanac_noun | Defaults to 'almanac' but will support any noun.  For example grimoire, tome, or handbook.
+almanac_no_use_scripts | A default list of scripts known to suffer interference from ;almanac so it is blocked from firing while those script are active.  **Recommend not removing anything from the default list unless you REALLY know what you're doing.**
+almanac_skills | For use with pick-a-skill only.  List of skills to study in your almanac, prioritizes by mindstate from the top down.
+#### Best Use:
+`;e autostart('almanac', false)  #false makes it fire for only one character versus all`
+
+Add to your existing settings:
+```yaml
+training_abilites:
+  Almanac: 60   #it is a 10 min CD but this makes ;combat check every 60 seconds to not miss a use
+
+loot_additions:
+  - almanac  #in case you do drop it for any reason
+```
