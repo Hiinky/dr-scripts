@@ -164,7 +164,7 @@ class Enchant
   end
 
   def trace_sigil(sigil)
-    bput("get #{sigil} sigil", 'You get')
+    bput("get #{sigil} sigil from my #{@bag}", 'You get')
     bput("study my #{sigil} sigil", 'You study')
     waitrt?
     bput("trace #{@item} on #{@brazier}", 'you trace')
