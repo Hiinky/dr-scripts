@@ -1162,6 +1162,21 @@ hunting_zones:
   - 16338
   - 16334
   - 16336
+  # no page yet but lachmates are a critter level 80-82 - will need update with link/ranges
+  gigantic_lachmate:
+  - 16879
+  - 16880
+  - 16881
+  - 16882
+  - 16883
+  - 16884
+  # no page yet but lachmates are a critter level 84-86 - will need update with link/ranges
+  # Estate Holder Only
+  gigantic_lachmate_stairs:
+  - 16885
+  - 16886
+  - 16887
+  - 16888  
   # https://elanthipedia.play.net/Storm_bull                             550-750
   # Good swarm, lots of items for crafting off these
   # Leeches to and from accessing them
