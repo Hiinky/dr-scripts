@@ -189,7 +189,7 @@ class Remedy
     get_item(@container)
 
     bput('swap', 'You move', 'You have nothing') unless right_hand =~ /#{@container}/i #lower ground only works if the container is in the right hand.
-    bput("lower ground", 'You lower') # lower to count and combine herbs. Switched to just lower ground so it works with all containers.
+    bput("lower #{@container} to ground", 'You lower') # lower to count and combine herbs. Switched to just lower ground so it works with all containers.
 
     # count herb, less than 25 get more herbs, otherwise stow and continue
     # added to handle herb containers, and modified to combine up to 25
